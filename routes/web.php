@@ -10,6 +10,7 @@
     |
     */
     
+    use App\alumno;
     use Illuminate\Http\Request;
     
     Route::get('/', function () {
@@ -35,7 +36,11 @@
         } else {
             $nombre = "Sin Nombre";
         }
-        $m = ["Mensaje" => "Bienvenido " . $nombre];
+         
+         $ar=alumno::create(["nombre"=>$nombre]);
+      
+      
+        $m = ["Mensaje" => "Bienvenido " . $ar->nombre];
         
         return response($m, 200)
             ->header('Content-Type', 'application/json')
