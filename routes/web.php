@@ -30,6 +30,12 @@
             ->header('Content-Type', 'application/json')
             ->header('expires', 'Fri, 15 Feb 2019 19:52:41 GMT');
     });
+    Route::get("/ListaNombre",function(){
+        
+        return alumno::all();
+    });
+    
+    
     Route::post("/nombre", function (Request $request) {
         if ($request->exists('Nombre')) {
             $nombre = $request->input('Nombre');
