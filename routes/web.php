@@ -10,8 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
+    
+    use Illuminate\Http\Request;
+    
+    Route::get('/', function () {
     return view('welcome');
 });
 
