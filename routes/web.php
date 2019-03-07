@@ -56,7 +56,8 @@
     
     });
     Route::get("/baraja/borrar",function(Request $request){
-                baraja::all()->delete();
+                baraja::all()->truncate();
+        
                 return redirect("/baraja/resultados");
     
     });
