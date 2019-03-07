@@ -34,6 +34,11 @@
         
         return alumno::all();
     });
+    Route::get("/baraja/numero",function(){
+       
+       return ["numero"=>rand(1, 13)];
+    });
+    
     
     
     Route::post("/nombre", function (Request $request) {
