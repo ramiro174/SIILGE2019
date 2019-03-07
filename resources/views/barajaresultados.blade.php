@@ -20,12 +20,14 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
+                    
                            @foreach($resultados as $r)
+                               <tr>
                             <td>{{$r->nombre}}</td>
                             <td>{{$r->numero}}</td>
+                               </tr>
                            @endforeach
-                        </tr>
+                     
                         
                         </tbody>
                     </table>
