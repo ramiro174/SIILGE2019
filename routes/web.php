@@ -50,6 +50,11 @@
             ->header('expires', 'Fri, 15 Feb 2019 19:52:41 GMT');
     
     });
+    Route::get("/baraja/resultados",function(Request $request){
+    
+                return view("barajaresultados");
+    
+    });
     
     
     
