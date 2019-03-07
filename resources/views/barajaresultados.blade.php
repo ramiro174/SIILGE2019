@@ -9,9 +9,9 @@
 
                 <div class="card-body">
     
-                    <table class="table table-bordered">
+                    <table class="table table-bordered table-hover">
                         <thead>
-                        <tr>
+                        <tr class="table-success">
                             <th >Nombre</th>
                             <th >Numero</th>
                         </tr>
