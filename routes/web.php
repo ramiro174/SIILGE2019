@@ -55,6 +55,11 @@
                 return view("barajaresultados")->with("resultados",$resultados);
     
     });
+    Route::get("/baraja/borrar",function(Request $request){
+                baraja::all()->delete();
+                return redirect("/baraja/resultados");
+    
+    });
     
     
     

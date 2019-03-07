@@ -4,8 +4,11 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
+            
             <div class="card">
-                <div class="card-header">Resultados del Torneo Mundial del 21 start!!!</div>
+                <div class="card-header">Resultados del Torneo Mundial del 21 start!!!
+                    <a  href="/baraja/borrar" class="btn btn-primary"></a>
+                </div>
 
                 <div class="card-body">
     
