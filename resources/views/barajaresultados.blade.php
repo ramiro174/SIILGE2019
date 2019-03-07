@@ -22,7 +22,7 @@
                         <tbody>
                     
                            @foreach($resultados as $r)
-                               <tr>
+                               <tr class="@if($r->numero>21){{"table-error"}}">
                             <td>{{$r->nombre}}</td>
                             <td>{{$r->numero}}</td>
                                </tr>
