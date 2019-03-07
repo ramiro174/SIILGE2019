@@ -56,7 +56,7 @@
     
     });
     Route::get("/baraja/borrar",function(Request $request){
-                baraja::all()->truncate();
+                baraja::truncate();
         
                 return redirect("/baraja/resultados");
     
