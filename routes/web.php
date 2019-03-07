@@ -11,6 +11,7 @@
     */
     
     use App\alumno;
+    use App\baraja;
     use Illuminate\Http\Request;
     
     Route::get('/', function () {
@@ -37,6 +38,17 @@
     Route::get("/baraja/numero",function(){
        
        return ["numero"=>rand(1, 13)];
+    });
+    Route::post("/baraja/enviar",function(Request $request){
+    
+        $nombre=$request->get("nombre");
+        $numero=$request->get("numero");
+        $ar=baraja::create(["nombre"=>$nombre,"numero"=>$numero]);
+    
+        return response(["Mensaje"=>$nombre ."tus resultado ha sido almacenado"], 200)
+            ->header('Content-Type', 'application/json')
+            ->header('expires', 'Fri, 15 Feb 2019 19:52:41 GMT');
+    
     });
     
     
