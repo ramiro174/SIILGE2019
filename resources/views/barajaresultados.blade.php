@@ -7,7 +7,7 @@
             
             <div class="card">
                 <div class="card-header">Resultados del Torneo Mundial del 21 start!!!
-                    <a  href="/baraja/borrar" class="btn btn-primary"></a>
+                    <a  href="/baraja/borrar" class="btn btn-danger"> Borrar Registros</a>
                 </div>
 
                 <div class="card-body">
