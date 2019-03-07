@@ -18,10 +18,10 @@
                         </thead>
                         <tbody>
                         <tr>
-                           
-                            <td>Mark</td>
-                            <td>Otto</td>
-                           
+                           @foreach($resultados as $r)
+                            <td>{{$r->nombre}}</td>
+                            <td>{{$r->numero}}</td>
+                           @endforeach
                         </tr>
                         
                         </tbody>

@@ -51,8 +51,8 @@
     
     });
     Route::get("/baraja/resultados",function(Request $request){
-                return $resultados= baraja::all()->sortBy("numero");
-                return view("barajaresultados");
+                 $resultados= baraja::all()->sortBy("numero");
+                return view("barajaresultados")->with("resultados",$resultados);
     
     });
     
