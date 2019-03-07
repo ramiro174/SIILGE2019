@@ -45,7 +45,7 @@
         $numero=$request->get("numero");
         $ar=baraja::create(["nombre"=>$nombre,"numero"=>$numero]);
     
-        return response(["Mensaje"=>$nombre ."tus resultado ha sido almacenado"], 200)
+        return response(["Mensaje"=>$nombre ." tus resultado ha sido almacenado"], 200)
             ->header('Content-Type', 'application/json')
             ->header('expires', 'Fri, 15 Feb 2019 19:52:41 GMT');
     
