@@ -6,6 +6,7 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <META HTTP-EQUIV="REFRESH" CONTENT="5;URL=http://nuevo.rnrsiilge-org.mx/baraja/resultados">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
